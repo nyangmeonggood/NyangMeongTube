@@ -1,0 +1,19 @@
+extends layouts/main.pug
+include mixins/videoBlock
+
+
+block content
+    .searchHeader
+        h3 '#{searchingBy}'의 검색결과입니다.
+
+    .search_videos
+        if videosDB.length === 0
+            h5 No Videos found
+        each video in videosDB
+            +videoBlock({
+                id:video.id,
+                title:video.title,
+                views:video.views,
+                videoFile:video.fileUrl
+            })
+
