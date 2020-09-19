@@ -1,0 +1,47 @@
+.video_detail_container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 850px;
+  .video_player {
+    width: 100%;
+    video {
+      width: 100%;
+    }
+  }
+  .video_info {
+    width: 100%;
+    margin-top: 25px;
+
+    button {
+      max-width: 100px;
+      margin-bottom: 25px;
+    }
+
+    .video_title,
+    .video_views,
+    .video_description {
+      display: block;
+      margin-bottom: 15px;
+    }
+    .video_title {
+      font-size: 22px;
+      font-weight: 300;
+    }
+    .video_views {
+      font-size: 14px;
+    }
+    .video_description {
+      font-size: 16px;
+    }
+  }
+  .video_comments {
+    margin-top: 25px;
+    text-align: center;
+    .video_comment_number {
+      font-size: 18px;
+    }
+  }
+}

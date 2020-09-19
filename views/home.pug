@@ -2,7 +2,44 @@ extends layouts/main.pug
 include mixins/videoBlock
 
 block content
-    .videos
+    .homeVideos
+        each video in videosDB
+            +videoBlock({
+                id:video.id,
+                title:video.title,
+                views:video.views,
+                videoFile:video.fileUrl
+            })
+
+                .homeVideos
+        each video in videosDB
+            +videoBlock({
+                id:video.id,
+                title:video.title,
+                views:video.views,
+                videoFile:video.fileUrl
+            })    .homeVideos
+        each video in videosDB
+            +videoBlock({
+                id:video.id,
+                title:video.title,
+                views:video.views,
+                videoFile:video.fileUrl
+            })    .homeVideos
+        each video in videosDB
+            +videoBlock({
+                id:video.id,
+                title:video.title,
+                views:video.views,
+                videoFile:video.fileUrl
+            })    .homeVideos
+        each video in videosDB
+            +videoBlock({
+                id:video.id,
+                title:video.title,
+                views:video.views,
+                videoFile:video.fileUrl
+            })    .homeVideos
         each video in videosDB
             +videoBlock({
                 id:video.id,
