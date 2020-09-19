@@ -4,12 +4,11 @@ import User from "../models/User";
 
 export const getLogin = (req, res) =>
   res.render("login", { pageTitle: "Login" });
-export const postLogin = (req, res) => {
-  passport.authenticate("local", {
-    failureRedirect: routes.login,
-    successRedirect: routes.home,
-  });
-};
+
+export const postLogin = passport.authenticate("local", {
+  failureRedirect: routes.login,
+  successRedirect: routes.home,
+});
 
 export const logout = (req, res) => {
   //To do: Process Logout;
