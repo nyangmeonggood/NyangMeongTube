@@ -1,0 +1,25 @@
+.userProfile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .userProfile_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    .userProfile_name {
+      font-size: 18px;
+      margin-top: 15px;
+    }
+  }
+  .userProfile_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
